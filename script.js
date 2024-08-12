@@ -18,6 +18,7 @@ let weather = {
       .then((data) => this.displayWeather(data));
   },
   displayWeather: function (data) {
+    console.log(data);
     const { name } = data;
     const { icon, description } = data.weather[0];
     const { temp, humidity } = data.main;
